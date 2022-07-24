@@ -1,18 +1,18 @@
 /*
-5. Write a Java program that takes two numbers as input and display the product of two numbers.
-*/
+ 7. Write a Java program that takes a number as input and prints its multiplication table upto 10.
+ */
 
 import java.util.Scanner;
 
-public class Problem5 {
+public class Problem7 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         try{
             System.out.println("Enter the first number: ");
             int number1 = scanner.nextInt();
-            System.out.println("Enter the second number: ");
-            int number2 = scanner.nextInt();
-            System.out.println(number2*number1);
+            for (int index = 1; index <= 10; index++) {
+                System.out.println(number1 + " * " + index + " = " + (number1*index));     
+            }
         } finally {
             scanner.close();
         }
